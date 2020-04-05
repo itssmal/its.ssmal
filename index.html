@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="script.js"></script>
+
+
 
 </head>
 <body>
@@ -16,43 +16,59 @@
     <div class="title">
         <h1>OLEKSANDR SMAL</h1>
     </div>
-
+    <nav class="navbar">
+      <h3 id="nav-toggle" onclick="showNavbar()"> 
+        <i class="fas fa-bars"></i>Navigation
+      </h3>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#education" alt="Education" class="nav-links">Education</a>
+        </li>
+        <li>
+          <a href="#workExperience" alt="Work Experience" class="nav-links">Work Experience</a>
+        </li>
+        <li>
+          <a href="#achievements" alt="Achievements" class="nav-links">Achievements</a>
+        </li>
+        <li>
+          <a href="#activities" alt="Activities" class="nav-links">Activities</a>
+        </li>
+        <li>
+          <a href="#courses" alt="Courses" class="nav-links">Courses</a>
+        </li>
+        <li>
+          <a href="#skills" alt="Skills" class="nav-links">Skills</a>
+        </li>
+        <li>
+          <a href="#skills" alt="Skills" class="nav-links">Projects</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <article>
     <div class="cv">
-      <h1>
-        MY CV
-      </h1>
-      <div class="container highlightTextOut">
-        <a alt="Education">Education</a>
-        <a alt="Work Experience">Work Experience</a>
-        <a alt="Achievements">Achievements</a>
-        <a alt="Activities">Activities</a>
-        <a alt="Courses">Courses</a>
-        <a alt="Skills">Skills</a>
-        <a alt="Interests">Interests</a>
-      </div>
-      <hr>
-      <h2>
-        Oleksandr Smal <br>
-      </h2>
-      <h3>
+      <h1>MY CV</h1>
+      <h2> Oleksandr Smal <br> </h2>
+       <h3>
         Software Developer<br>
         52B, Pasichna str., Lviv, Ukraine<br>
         <a href="tel:+380951500135" class="activeMailAndPhoneNumber">+380951500135</a><br>
         <a href="mailto:its.ssmal@gmail.com" class="activeMailAndPhoneNumber">its.ssmal@gmail.com</a> <br>
       </h3>
       <p>
-        <h2>Education</h2>
-          <h3>Chernivtsi School №31 (2008-2012)</h3>
-          Primary School	
-          <h3>Chernivtsi Gymnasia 4 (2012-2018)</h3>
-          Secondary Education Certificate
-          <h3>Chernivtsi Musical School №3 (2009-2015)</h3>
-          Music Degree
-          <h3>Ivan Franko National University of Lviv (2019-present)</h3>
-          High education
+        <div id="education">
+          <h2>Education</h2>
+            <h3>Chernivtsi School №31 (2008-2012)</h3>
+            Primary School	
+            <h3>Chernivtsi Gymnasia 4 (2012-2018)</h3>
+            Secondary Education Certificate
+            <h3>Chernivtsi Musical School №3 (2009-2015)</h3>
+            Music Degree
+            <h3>Ivan Franko National University of Lviv (2019-present)</h3>
+            High education
+        </div>
+        <div id="workExperience">
           <h2>Work Experience</h2>
           <div class="workLogo">
             <img src="logo-rounded.png" alt="MOBItel logo(was created by me)" width="150px">
@@ -68,7 +84,9 @@
               <li>selling phones and accessories</li>
             </ul>
           </div>
-          <h2>Accomplishments and achievements</h2>
+        </div>
+          <div id="achievements">
+            <h2>Accomplishments and achievements</h2>
           <ul class="achievements">
             <li>
               <i class="em em-second_place_medal" aria-role="presentation" aria-label="SECOND PLACE MEDAL"></i> Nationwide competition on playing bandura (2013) <h5>Kharkiv, Ukraine.</h5><br>
@@ -89,7 +107,9 @@
               <i class="em em-gb" aria-role="presentation" aria-label="United Kingdom Flag"></i> FCE Exam B2 Level (2018) <h5>Chernivtsi, Ukraine</h5><br>
             </li>
           </ul>
-          <h2>Activities</h2>
+          </div>
+          <div id="activities">
+            <h2>Activities</h2>
           <ul class="activities">
             <li>
               <i class="em em-man-wrestling" aria-role="presentation" aria-label=""></i> Wrestling (2008-2013) <h5>Chernivtsi, Ukraine.</h5><br>
@@ -110,7 +130,9 @@
               <i class="em em-newspaper" aria-role="presentation" aria-label="NEWSPAPER"></i> Editor of school newspaper in English (2018)  <h5>Chernivtsi, Ukraine.</h5><br>
             </li>
         </ul>
-          <h2>Courses</h2>
+          </div>
+          <div id="courses">
+            <h2>Courses</h2>
           <ul class="courses">
             <li>English Technical Translation (2018-2019)</li>
             <li>Country Studies (American and British) (2018-2019)</li>
@@ -121,8 +143,9 @@
             <li>ITVDN JavaScript Essential (2020)</li>
             <li>ITVDN JavaScript Advanced (unfinished)</li>
           </ul>
-          <h2>Skills</h2>
-          <div>
+          </div>
+          <div id="skills">
+            <h2>Skills</h2>
             <h3>Languages</h3>
             <ul class="skills">
               <li>
@@ -143,6 +166,8 @@
               <li></li>
             </ul>
           </div>
+          </div>
+          
           
       </p>
     </div>
@@ -175,5 +200,8 @@
       <a href="https://www.instagram.com/its_ssmal/" class="footer"> Olexandr Smal</a> &copy; 2020</p>
     </h5>
   </footer>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
