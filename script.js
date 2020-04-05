@@ -1,21 +1,21 @@
 let navLinks = document.querySelector("#js-menu");
-const navbar = document.querySelector("#navigation");
-let sticky = navbar.offsetTop;
-console.log(sticky);
+// const navbar = document.querySelector("#navigation");
+// let sticky = navbar.offsetTop;
+// console.log(sticky);
 
-// ---------------------------- Sticky Navbar ----------------------
-window.onscroll = function() {
-    myFunction();
-};
+// // ---------------------------- Sticky Navbar ----------------------
+// window.onscroll = function() {
+//     myFunction();
+// };
 
-function myFunction() {
-    console.log(sticky);
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//     console.log(sticky);
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
 
 // ---------------------- Navbar collapsible ----------------------
 function showNavbar() {
